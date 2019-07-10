@@ -1,7 +1,7 @@
 var path = require("path");
 
 module.exports = function(app) {
-	// Displays survey page if user has survey in URL or if the user clicks the survey button
+	// Displays map page if user has map in URL or if the user clicks the map button
 	app.get("/map", function(req, res) {
 		res.sendFile(path.join(__dirname, "/../public/map.html"));
 	});
